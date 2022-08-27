@@ -6,7 +6,7 @@
 	background: url("image/hero-bg.jpg") no-repeat center center fixed;
 	background-size: cover;
 }*/
-body {
+.back {
 	margin: 0;
 	padding: 0;
 	user-select: none;
