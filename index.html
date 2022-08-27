@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SERGEY</title>
+		<link href = "style.css" rel = "stylesheet">
+		<script src="https://kit.fontawesome.com/3219cc2f1b.js" crossorigin="anonymous"></script>
+		<script src = "script.js"></script>
+		<link rel="icon" href="image/icon2.png" type="image/x-icon">
+		<script src="jquery.js"></script>
+		<script src="./cloud.js"></script>
+		<script
+           src="https://code.jquery.com/jquery-3.6.0.js"
+           integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+		</script>
+		<script>
+
+			function init() {
+				var w = Math.max(window.innerWidth, document.body.clientWidth), h = Math.max(window.innerHeight, document.body.clientHeight);
+				var clouder = document.getElementById('clouder');
+				
+				clouder.style.border = "1px solid black";
+				clouder.style.width = asPixels(w * 2 / 10);
+				clouder.style.height = asPixels(h * 2 / 10);
+				clouder.style.position = "absolute";
+				clouder.style.marginTop = "100vh";
+				clouder.style.left = asPixels(w / 6);
+				clouder.style.top = asPixels(h / 6);
+				clouder.style.border = "1px solid black";
+				
+				window.clouder = new Clouder({
+					container: clouder,
+					tags: createTags()
+				});
+			} // init
+			
+			function createTags() {
+				var elems = [];
+				elems.push({text: "Az", id: "1", weight: 0.1});
+				elems.push({text: "Vedi", id: "2", weight: 0.1});
+				elems.push({text: "Glagol", id: "3", weight: 0.1});
+				elems.push({text: "Dobro", id: "4", weight: 0.1});
+				elems.push({text: "Est", id: "5", weight: 0.1});
+				elems.push({text: "Zelo", id: "6", weight: 0.1});
+				elems.push({text: "Zemla", id: "7", weight: 0.1});
+				elems.push({text: "Izhe", id: "8", weight: 0.1});
+				elems.push({text: "Theta", id: "9", weight: 0.1});
+				elems.push({text: "I", id: "10", weight: 0.5});
+				elems.push({text: "Kako", id: "20", weight: 0.5});
+				elems.push({text: "Ludi", id: "30", weight: 0.5});
+				elems.push({text: "Myslete", id: "40", weight: 0.5});
+				elems.push({text: "Nash", id: "50", weight: 0.5});
+				elems.push({text: "Ksi", id: "60", weight: 0.5});
+				elems.push({text: "On", id: "70", weight: 0.5});
+				elems.push({text: "Pokoi", id: "80", weight: 0.5});
+				elems.push({text: "Cherv", id: "90", weight: 0.5});
+				elems.push({text: "Rtsy", id: "100", weight: 1.0});
+				elems.push({text: "Slovo", id: "200", weight: 1.0});
+				elems.push({text: "Tverdo", id: "300", weight: 1.0});
+				elems.push({text: "Uk", id: "400", weight: 1.0});
+				elems.push({text: "Fert", id: "500", weight: 1.0});
+				elems.push({text: "Kha", id: "600", weight: 1.0});
+				elems.push({text: "Psi", id: "700", weight: 1.0});
+				elems.push({text: "Omega", id: "800", weight: 1.0});
+				elems.push({text: "Tsy", id: "900", weight: 1.0});
+				return elems;
+			} // createTags
+			
+			</script>
+			
+	</head>
+<body onLoad="init();">
+	<div class = "back">
+	<div class = "line">
+		<audio id="player" src="angels.mp3"></audio>
+		<a class = "bitlo" onclick="document.getElementById('player').play()"><i class="fa-brands fa-soundcloud" style = "font-size: 10px;"></i> Sound</a>
+		<!---<a href = "#" class = "main-menu-button"><i class="fa-solid fa-bars"></i></a>--->
+		<nav>
+			<ul>
+				<li>
+					<a href = "#" class = "menu-button"><i class="fa-brands fa-telegram" style = "font-size: 50px; "></i></a>
+					<a href = "#" class = "menu-button"><i class="fa-brands fa-facebook" style = "font-size: 50px;"></i></a>
+					<a href = "#" class = "menu-button"><i class="fa-brands fa-github"   style = "font-size: 50px;"></i></a>
+					<!--<a href = "#" class = "menu-button">About</a>
+					<a href = "#" class = "menu-button">Achievment</a>
+					<a href = "#" class = "menu-button">Blog</a>-->
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class = "text">
+		<h3 class = "text-intro1">W E  A R E  I N F I N I T Y.</h3>
+		<h1 class = "text-intro2">We Craft Stunning <br> Digital Experiences</h1>
+		<!---<h1 class = "text-intro2">We</h1> <h1>Craft</h1> <h1>Stunning</h1> <br> <h1>Digital</h1> Experiences</h1>--->
+		<a href = "https://docs.google.com/forms/d/1TY3HA-lqAvEzDUPEGAkySrzqL_wwnuomMcGdP0q-OEk/edit" class = 'button'>
+			Learn more
+		</a>
+	</div>
+	<div class = "scroll-down">Scroll down<i class="fa-solid fa-arrow-down" style = "font-size: 15px;"></i></div>
+    </div>
+
+	<div class = "back-2">
+		<div class = "text-block">
+		   <div class = "port">My Portfolio</div>
+		   <div class = "about-me">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat. 
+			<a class = "see-more" href = "#" >See more</a></div>
+		   
+		   <!---<div class = "work">Work</div>--->
+		</div>
+		  <div class="row">
+			<div class = "img-portfolio" style = "border-radius: 10px 0 0 0;">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+		    <div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+		    <div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+		    <div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+		    <div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+		  </div>
+		  <div class="row1">
+			<div class = "img-portfolio" style = "border-radius: 0 0 0 15px;">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+			<div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+			<div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+			<div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+			<div class = "img-portfolio">
+				<!---<div class = "text-container">
+					<div class = "intro">
+						<small>name</small>
+					</div>
+				</div>--->
+			</div>
+		  </div>
+<div>
+	<!---<button onclick="document.getElementById('player').pause()">Пауза</button>
+	<button onclick="document.getElementById('player').volume+=0.1">Громкость +</button>
+	<button onclick="document.getElementById('player').volume-=0.1">Громкость -</button>--->
+</div> 
+	</div>
+     
+	<div class = "back-4">
+	<div class = "sphere-block">
+		<div class = "me">
+			Me, Myself and I
+		</div>
+		<div class = "me-paragraph">
+			Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01<br>
+			as standards of the current web I've been passionate about web.<br>
+	
+			For over a decade | had many opportunities to work in a vast spectrum of web<br>
+			technologies what let me gather a significant amount of various experience. Working for<br>
+			companies and individuals around the globe | met and leamt from amazing and ambitious<br>
+			people.
+	
+			I currently work remotely with a selected freelance client base being open for new<br>
+			opportunities.<br>
+		</div>
+			<span class="Sphere"></span>
+	
+		<!-- Including the TagCloud.js script CDN in the document    -->
+		<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+		<script>
+			const Texts = [
+				'HTML', 'CSS', 'JAVASCRIPT',
+				'SWIFT', 'MONGOOSE', 'REACT',
+				'PYTHON', 'SASS',
+				'DJANGO', 'NODEJS', 'MONGODB',
+				'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA'
+			];
+	
+			var tagCloud = TagCloud('.Sphere', Texts, {
+	
+				// Sphere radius in px
+				radius: 400,
+	
+				// animation speed
+				// slow, normal, fast
+				maxSpeed: 'normal',
+				initSpeed: 'fast',
+	
+				// Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+				direction: 135,
+	
+				// interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+				keep: true
+	
+			});
+	
+			// Giving color to each text in sphere
+			var color = '#08fdd8';
+			document.querySelector('.Sphere').style.color = color;
+		</script>
+		</div>
+</div>
+
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+
+	<!---<script type="text/javascript">
+	$(document).ready(function() {
+	$("body").css("display", "none"); /** body (здесь и далее) означает, что эффект применяется ко всей странице. Можно изменить на идентификаторы любых элементов (#content, .comments и т.д.) */
+  
+	$("body").fadeIn(1500); /** время появления в миллисекундах */
+	 
+	$("a.fade").click(function(event){ /** a.fade означает, что данное решение будет работать только при нажатии на ссылки с классом (class) "fade" (можно изменить на свой) */
+	event.preventDefault();
+	linkLocation = this.href;
+	$("body").fadeOut(500, redirectPage); /** время изчезания в миллисекундах */
+	});
+  
+	function redirectPage() {
+	window.location = linkLocation;
+	}
+	});
+	</script>--->
+</body>
+</html>
